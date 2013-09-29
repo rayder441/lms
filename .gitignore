@@ -15,6 +15,9 @@ javadoc/**
 *.o
 *.so
 
+# Python compiled files
+*.pyc
+
 # IntelliJ metadata
 .idea
 
