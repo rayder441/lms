@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CS224N Autumn 2013-14: {{ student.sunet }}</title>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <h3>CS224N (Autumn 2013-14): Natural Language Processing</h3>
+    <div class="record">Student: {{ student.sunet }}/{{ student.id }}</div>
+    <div class="record">Late days remaining: {{ student.late_days }}</div>
+    <div class="record">
+      Participation:
+      <table id="by-week">
+	<tr>
+	  <td>Week</td>
+	  <td>1</td>
+	  <td>2</td>
+	  <td>3</td>
+	  <td>4</td>
+	  <td>5</td>
+	  <td>6</td>
+	  <td>7</td>
+	  <td>8</td>
+	  <td>9</td>
+	  <td>10</td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>{{ student.week1 }}</td>
+	  <td>{{ student.week2 }}</td>
+	  <td>{{ student.week3 }}</td>
+	  <td>{{ student.week4 }}</td>
+	  <td>{{ student.week5 }}</td>
+	  <td>{{ student.week6 }}</td>
+	  <td>{{ student.week7 }}</td>
+	  <td>{{ student.week8 }}</td>
+	  <td>{{ student.week9 }}</td>
+	  <td>{{ student.week10 }}</td>
+	</tr>
+      </table>
+      <span class='footnote'>'x' for credit received</span>
+    </div>
+  </div>
+</body>
+
+</html>
