@@ -29,3 +29,7 @@ body {
 .footnote {
    font-weight:lighter;
 }
+
+td {
+   padding-right:1.0em;
+}
