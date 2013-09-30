@@ -2,15 +2,19 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>CS224N Autumn 2013-14 Participation</title>
-
+  <title>CS224N Autumn 2013-14 Participation</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 
 <body>
-  <form action="/" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit" />
+  <h3>CS224N (Autumn 2013-14): Natural Language Processing</h3>
+  <div id="query-form">
+    <form action="/" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Submit" />
+    </div>
 </form>
 </body>
 </html>

@@ -1,0 +1,31 @@
+body {
+   font-family:'Source Sans Pro',Helvetica Neue, sans-serif;
+   color:#8C1515;
+}
+
+#query-form {
+   max-width:400px;
+}
+
+.record {
+   background-color:#eee6cb;
+   margin-bottom:1em;
+   width:350px;
+   max-width:350px;
+}
+
+.dlabel {
+   font-weight:bold;
+}
+
+#by-week {
+   margin-bottom:1.0em;
+}
+
+#buffer {
+   margin-bottom:1.0em;
+}
+
+.footnote {
+   font-weight:lighter;
+}
