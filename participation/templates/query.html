@@ -10,7 +10,7 @@
 <body>
   <div id="wrapper">
     <h3>CS224N (Autumn 2013-14): Natural Language Processing</h3>
-    <div class="record"><span class="dlabel">Student</span>: {{ student.sunet }} / {{ student.id }}</div>
+    <div class="record"><span class="dlabel">Student</span>: {{ student.name }} / {{ student.id }}</div>
     <div class="record"><span class="dlabel">Late days remaining</span>: {{ student.late_days }}</div>
     <div class="record">
       <span class="dlabel">Participation</span>:
@@ -30,16 +30,16 @@
 	</tr>
 	<tr>
 	  <td></td>
-	  <td>{{ student.week1 }}</td>
-	  <td>{{ student.week2 }}</td>
-	  <td>{{ student.week3 }}</td>
-	  <td>{{ student.week4 }}</td>
-	  <td>{{ student.week5 }}</td>
-	  <td>{{ student.week6 }}</td>
-	  <td>{{ student.week7 }}</td>
-	  <td>{{ student.week8 }}</td>
-	  <td>{{ student.week9 }}</td>
-	  <td>{{ student.week10 }}</td>
+	  <td>{{ student.week1|default_if_none:"" }}</td>
+	  <td>{{ student.week2|default_if_none:"" }}</td>
+	  <td>{{ student.week3|default_if_none:"" }}</td>
+	  <td>{{ student.week4|default_if_none:"" }}</td>
+	  <td>{{ student.week5|default_if_none:"" }}</td>
+	  <td>{{ student.week6|default_if_none:"" }}</td>
+	  <td>{{ student.week7|default_if_none:"" }}</td>
+	  <td>{{ student.week8|default_if_none:"" }}</td>
+	  <td>{{ student.week9|default_if_none:"" }}</td>
+	  <td>{{ student.week10|default_if_none:"" }}</td>
 	</tr>
       </table>
       <div id="buffer"></div>
