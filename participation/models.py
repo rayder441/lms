@@ -5,6 +5,7 @@ class Student(models.Model):
     name = models.CharField(max_length=100)
     sunet = models.CharField(max_length=100,null=True)
     late_days = models.IntegerField(default=4)
+    cgw = models.CharField(max_length=1,blank=True,null=True)
     week1 = models.CharField(max_length=1,blank=True,null=True)
     week2 = models.CharField(max_length=1,blank=True,null=True)
     week3 = models.CharField(max_length=1,blank=True,null=True)
